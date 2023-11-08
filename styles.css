@@ -126,7 +126,7 @@ h4 {
 
 
 
-.container {
+.div-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -137,18 +137,19 @@ h4 {
     margin: auto;
 }
 
-.container>div {
+.div-container>div {
     padding: 10px;
     border: 0px solid black;
 }
 
-.container>div:last-child {
+.div-container>div:last-child {
     margin-left: auto;
 }
 
 .Box1 {
     border: 0px solid white;
     display: flex;
+    margin-right: 1000px;
     justify-content: space-between;
     align-items: center;
     width: 20%;
@@ -179,7 +180,7 @@ h4 {
     color: #E8E8E8;
 }
 
-.container1 {
+.div-container1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,7 +194,7 @@ h4 {
 }
 
 
-.container img {
+.div-container img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
@@ -219,7 +220,7 @@ span {
 }
 
 
-.grid-container {
+.grid-div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   
@@ -228,46 +229,46 @@ span {
 }
 
 @media (max-width: 768px) {
-    .grid-container {
+    .grid-div {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .grid-container {
+    .grid-div {
         grid-template-columns: 1fr;
     
     }
 }
 
-.grid-container>div {
+.grid-div>div {
     width: 80%;
     border-radius: 10px;
     border: 1px solid #ccc;
     main-right-align: center;
 }
 
-.grid-container a {
+.grid-div a {
     main-right-align: center;
 }
 
 
-.grid-container img {
+.grid-div img {
     border-radius: 10px;
     max-width: 100%;
 }
 
-.grid-container h2 {
+.grid-div h2 {
     font-size: 1.2em;
     margin: 10px 0;
 }
 
-.grid-container span {
+.grid-div span {
     font-size: 0.8em;
     color: #666;
 }
 
-.grid-container h1 {
+.grid-div h1 {
     font-size: 1.1em;
     font-weight: bold;
     margin: 10px 0;
@@ -278,7 +279,7 @@ span {
     margin: auto;
 }
 
-.grid-container2 {
+.grid-div2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -292,13 +293,13 @@ span {
 }
 
 @media screen and (max-width: 992px) {
-    .grid-container2 {
+    .grid-div2 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 480px) {
-    .grid-container2 {
+    .grid-div2 {
         grid-template-columns: 1fr;
     }
 }
