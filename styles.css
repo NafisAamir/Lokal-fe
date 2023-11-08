@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+#logo {
+    scale:4.0;
+    width: 25px;
+    height: 40px;
+}
+
+
+.main-img {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000;
+    
+}
+.main-img img{
+   scale: 0.6;
+   margin-top: -150px;
+    margin-left:-200px;
+}
+
+
+.main-right {
+    scale:1.5;
+    background: #000;
+    margin-top: 200px;
+    margin-right: 70px;
+    margin-bottom: 120px;
+}
+
+.main-right h1,
+h4 {
+    color: white
+}
+
+.main-right button {
+    background: #000;
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#main-img1 {
+    width: 100%;
+    height: 70%;
+}
+
+.hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.user-icon {
+    font-size: 24px;
+    color: white;
+}
+
+.menu-drawer {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #2b2a2a;
+    transition: left 0.4s;
+    z-index: 1;
+}
+
+.menu-drawer.open {
+    left: 0;
+}
+
+.menu-content {
+    padding: 70px 20px 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.menu-content a {
+    main-right-decoration: none;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.content-below{
+    display: flex;
+    
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger-menu.show {
+        display: block;
+    }
+}
+
+.hamburger-menu.hide {
+    display: none;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0px solid white;
+    color: white;
+    margin-bottom: 50px;
+    width: 90%;
+    margin: auto;
+}
+
+.container>div {
+    padding: 10px;
+    border: 0px solid black;
+}
+
+.container>div:last-child {
+    margin-left: auto;
+}
+
+.Box1 {
+    border: 0px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.Boxlast {
+    border: 0px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+    width: 20%;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.Box2 {
+    border: 0px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    font-size: 15px;
+    line-height: 24px;
+    color: #E8E8E8;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid white;
+    color: white;
+    margin-top: 20px;
+    
+    width: 90%;
+    margin: auto;
+
+}
+
+
+.container img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 0px solid #ccc;
+    transition: transform 0.2s;
+
+}
+
+.Middle {
+    width: 90%;
+    margin: auto;
+}
+
+.Middle img {
+    width: 100%;
+    height: 70%;
+}
+
+.Middle h2,
+h1,
+span {
+    color: white
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+    gap: 20px;
+   
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    
+    }
+}
+
+.grid-container>div {
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    main-right-align: center;
+}
+
+.grid-container a {
+    main-right-align: center;
+}
+
+
+.grid-container img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.grid-container h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.grid-container span {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.grid-container h1 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.End {
+    width: 90%;
+    margin: auto;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+   
+}
+
+.End img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 992px) {
+    .grid-container2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.End>div {
+    main-right-align: center;
+    color: white;
+}
+
+.End>div a {
+    color: white;
+    main-right-decoration-color: yellow;
+    main-right-decoration-style: solid;
+}
